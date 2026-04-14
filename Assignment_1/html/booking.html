@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Book Your Stay - Palm Haven</title>
+	
+	<!--This plays a vital role as it calls the codes on our css, and makes the webpage come to life-->
+	<link rel="stylesheet" href="../css/style.css">
+	
+</head>
+
+<header>
+
+	<!--Navigation-Bar; that contains the Location/Login/Bookings/Gallery & Reviews section of the website-->
+	
+    <nav class="navbar">
+        <h1 class="logo">Palm Haven</h1>
+		
+        <ul>
+		
+            <li><a href="index.html">Home</a></li>
+			<li><a href="location.html">Location</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="booking.html">Bookings</a></li>
+			<li><a href="reviews.html">Reviews</a></li>
+			
+		</ul>
+		
+    </nav>
+	
+</header>
+<body class="booking">
+	
+	<!--This is the body of our booking page, and it showcases our three main suites-->
+	
+    <h1>Choose Your Stay</h1>
+
+    <div class="card-container">
+
+        <div class="booking-card">
+            <h3>Vale Levu Bure</h3>
+            <p>Starting at $1500/night</p>
+			<img src="../images/vale-levu.jpg" alt="">
+            <button onclick="confirmBooking()">View Suite</button>
+        </div>
+
+        <div class="booking-card">
+            <h3>Vale'O Bure</h3>
+            <p>Starting at $2000/night</p>
+			<img src="../images/Vale'O.jpg" alt="">
+            <button onclick="confirmBooking()">View Suite</button>
+        </div>
+
+        <div class="booking-card">
+            <h3>Luxury Villa</h3>
+            <p>Starting at $2500/night</p>
+			<img src="../images/SegaNaLeqa.jpg" alt="">
+            <button onclick="confirmBooking()">View Suite</button>
+        </div>
+
+    </div>
+	
+</body>
+</html>

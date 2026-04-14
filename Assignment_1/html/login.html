@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - Palm Haven Resort</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="login">
+
+<header>
+   <!--Navigation-Bar; that contains the Location/Login/Bookings & Reviews section of the website-->
+    <nav class="navbar">
+        <h1 class="logo">Palm Haven</h1>
+		
+        <ul>
+		
+            <li><a href="index.html">Home</a></li>
+			<li><a href="location.html">Location</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="booking.html">Bookings</a></li>
+			<li><a href="reviews.html">Reviews</a></li>
+			
+		</ul>
+		
+    </nav>
+</header>
+
+<div class="login-container">
+    <h2>Welcome to Palm Haven Resort! Please Sign Up to Book Your Stay</h2>
+
+    <!-- Signup Form -->
+    <form id="signupForm">
+        <input type="text" id="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" placeholder="Last Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="password" id="password" placeholder="Password" required>
+
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+
+<!-- Script for Sign Up redirect -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById('signupForm');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Stop form submission
+            window.location.href = "booking.html"; // Redirect to booking page
+        });
+    });
+</script>
+
+</body>
+</html>
